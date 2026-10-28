@@ -62,9 +62,10 @@ Run from the repository root.
 `cargo nextest run --workspace --exclude oxiblas-benchmarks` is an accepted
 alternative to `cargo test` when nextest is installed.
 
-Avoid `--all-features` in the normal loop: it reaches the benchmark crate's
-opt-in `compare-openblas` feature, which needs a system OpenBLAS install. Run
-only the commands above unless the task explicitly concerns that comparison.
+Avoid `--all-features` in the normal loop (`CONTRIBUTING.md`): the optional
+`compare-openblas` benchmark comparison needs a system OpenBLAS install and is
+not part of the normal development loop. Run only the commands above unless the
+task explicitly concerns that comparison.
 
 ## Testing expectations
 
